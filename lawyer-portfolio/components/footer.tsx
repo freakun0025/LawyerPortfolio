@@ -10,10 +10,10 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Scale className="h-8 w-8 text-amber-600" />
-              <span className="text-xl font-bold">John Smith Law</span>
+              <span className="text-xl font-bold">Munish Mittal and Associates</span>
             </div>
             <p className="text-gray-300 mb-4">
-              Experienced legal representation with over 15 years of practice in civil litigation, property disputes,
+              Experienced legal representation with over 20 years of practice in civil litigation, property disputes,
               and contract law. Committed to achieving the best outcomes for our clients.
             </p>
             <div className="flex space-x-4">
@@ -61,22 +61,22 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-amber-600" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+91 9915525266</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-amber-600" />
-                <span className="text-gray-300">john@smithlaw.com</span>
+                <span className="text-gray-300">munishmittaladv@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-amber-600" />
-                <span className="text-gray-300">123 Legal Street, Law City, LC 12345</span>
+                <span className="text-gray-300">#25 Sunny Enclave-2, Near DMW, Patiala, Punjab</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400">© {new Date().getFullYear()} John Smith Law. All rights reserved.</p>
+          <p className="text-gray-400">© {new Date().getFullYear()} Munish Mittal Law. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -15,7 +15,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Scale className="h-8 w-8 text-amber-600" />
-              <span className="text-xl font-bold text-gray-900">John Smith Law</span>
+              <span className="text-xl font-bold text-gray-900">Munish Mittal and Associates</span>
             </Link>
           </div>
 
@@ -30,8 +30,8 @@ export default function Navbar() {
             <Link href="/services" className="text-gray-700 hover:text-amber-600 transition-colors">
               Services
             </Link>
-            <Link href="/blogs" className="text-gray-700 hover:text-amber-600 transition-colors">
-              Blog
+            <Link href="/media" className="text-gray-700 hover:text-amber-600 transition-colors">
+              Media
             </Link>
             <Link href="/testimonials" className="text-gray-700 hover:text-amber-600 transition-colors">
               Testimonials
@@ -39,12 +39,8 @@ export default function Navbar() {
             <Link href="/contact" className="text-gray-700 hover:text-amber-600 transition-colors">
               Contact
             </Link>
-            <Button asChild className="bg-amber-600 hover:bg-amber-700">
-              <Link href="/appointment">Book Appointment</Link>
-            </Button>
-            <Button variant="outline" asChild>
-              <Link href="/login">Admin Login</Link>
-            </Button>
+            
+            
           </div>
 
           {/* Mobile menu button */}
@@ -59,17 +55,19 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              <Link href="/" className="block px-3 py-2 text-gray-700 hover:text-amber-600">
+              
+                  <Link href="/" className="block px-3 py-2 text-gray-700 hover:text-amber-600">
                 Home
-              </Link>
+                  </Link>
+              
               <Link href="/about" className="block px-3 py-2 text-gray-700 hover:text-amber-600">
                 About
               </Link>
               <Link href="/services" className="block px-3 py-2 text-gray-700 hover:text-amber-600">
                 Services
               </Link>
-              <Link href="/blogs" className="block px-3 py-2 text-gray-700 hover:text-amber-600">
-                Blog
+              <Link href="/media" className="block px-3 py-2 text-gray-700 hover:text-amber-600">
+                Media
               </Link>
               <Link href="/testimonials" className="block px-3 py-2 text-gray-700 hover:text-amber-600">
                 Testimonials
@@ -77,14 +75,7 @@ export default function Navbar() {
               <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:text-amber-600">
                 Contact
               </Link>
-              <div className="px-3 py-2 space-y-2">
-                <Button asChild className="w-full bg-amber-600 hover:bg-amber-700">
-                  <Link href="/appointment">Book Appointment</Link>
-                </Button>
-                <Button variant="outline" asChild className="w-full">
-                  <Link href="/login">Admin Login</Link>
-                </Button>
-              </div>
+              
             </div>
           </div>
         )}

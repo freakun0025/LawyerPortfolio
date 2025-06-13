@@ -53,26 +53,26 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+1 (555) 123-4567", "24/7 Emergency Line"],
-      description: "Call us anytime for urgent legal matters",
+      details: ["+91 9915525266"],
+      description: "Call us for urgent legal matters",
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["john@smithlaw.com", "info@smithlaw.com"],
-      description: "We respond to all emails within 24 hours",
+      details: ["munishmittaladv@gmail.com"],
+      description: "We respond to all emails",
     },
     {
       icon: MapPin,
       title: "Office Address",
-      details: ["123 Legal Street", "Law City, LC 12345"],
+      details: ["#25 Sunny Enclave-2, Near DMW", "Patiala, Punjab"],
       description: "Visit us for in-person consultations",
     },
     {
       icon: Clock,
       title: "Office Hours",
-      details: ["Mon-Fri: 9:00 AM - 6:00 PM", "Sat: 10:00 AM - 2:00 PM"],
-      description: "Emergency consultations available 24/7",
+      details: ["Mon-Fri: 5:00 PM - 8:00 PM", "Sun: 10:00 AM - 2:00 PM"],
+      description: "Consultations available ",
     },
   ]
 
@@ -132,116 +132,8 @@ export default function ContactPage() {
       {/* Contact Form and Map */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <MessageSquare className="h-6 w-6 mr-2 text-amber-600" />
-                    Send Us a Message
-                  </CardTitle>
-                  <p className="text-gray-600">
-                    Fill out the form below and we'll get back to you within 24 hours. For urgent matters, please call
-                    us directly.
-                  </p>
-                </CardHeader>
-                <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="name">Full Name *</Label>
-                        <Input
-                          id="name"
-                          type="text"
-                          required
-                          value={formData.name}
-                          onChange={(e) => handleInputChange("name", e.target.value)}
-                          placeholder="Enter your full name"
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="email">Email Address *</Label>
-                        <Input
-                          id="email"
-                          type="email"
-                          required
-                          value={formData.email}
-                          onChange={(e) => handleInputChange("email", e.target.value)}
-                          placeholder="Enter your email"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <Label htmlFor="phone">Phone Number</Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={(e) => handleInputChange("phone", e.target.value)}
-                        placeholder="Enter your phone number"
-                      />
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="subject">Legal Matter *</Label>
-                        <Select onValueChange={(value) => handleInputChange("subject", value)}>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select practice area" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            {practiceAreas.map((area) => (
-                              <SelectItem key={area} value={area}>
-                                {area}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      <div>
-                        <Label htmlFor="urgency">Urgency Level</Label>
-                        <Select onValueChange={(value) => handleInputChange("urgency", value)}>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select urgency" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="low">Low - General inquiry</SelectItem>
-                            <SelectItem value="medium">Medium - Need response within a week</SelectItem>
-                            <SelectItem value="high">High - Need response within 24 hours</SelectItem>
-                            <SelectItem value="urgent">Urgent - Need immediate attention</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                    </div>
-
-                    <div>
-                      <Label htmlFor="message">Message *</Label>
-                      <Textarea
-                        id="message"
-                        required
-                        value={formData.message}
-                        onChange={(e) => handleInputChange("message", e.target.value)}
-                        placeholder="Please describe your legal situation in detail..."
-                        rows={6}
-                      />
-                    </div>
-
-                    <Button type="submit" disabled={isSubmitting} className="w-full bg-amber-600 hover:bg-amber-700">
-                      {isSubmitting ? (
-                        "Sending..."
-                      ) : (
-                        <>
-                          <Send className="h-4 w-4 mr-2" />
-                          Send Message
-                        </>
-                      )}
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
+           
 
             {/* Map and Additional Info */}
             <div className="space-y-6">
@@ -256,7 +148,7 @@ export default function ContactPage() {
                 <CardContent>
                   <div className="aspect-video bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890123!2d-74.0059413!3d40.7127753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjAiTiA3NMKwMDAnMjEuNCJX!5e0!3m2!1sen!2sus!4v1234567890123"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d430.3787651108837!2d76.41230310309992!3d30.35009385549624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910286244959745%3A0x6c8d9815d6be4ddd!2sAdvocate%20Munish%20Mittal!5e0!3m2!1sen!2sin!4v1749812178119!5m2!1sen!2sin"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
@@ -267,9 +159,9 @@ export default function ContactPage() {
                     ></iframe>
                   </div>
                   <div className="space-y-2">
-                    <p className="font-semibold">John Smith Law Office</p>
-                    <p className="text-gray-600">123 Legal Street</p>
-                    <p className="text-gray-600">Law City, LC 12345</p>
+                    <p className="font-semibold">Munish Mittal Law Office</p>
+                    <p className="text-gray-600">#25 Sunny Enclave-2, Near DMW</p>
+                    <p className="text-gray-600">Patiala, Punjab</p>
                     <p className="text-sm text-gray-500">
                       Convenient parking available. Accessible entrance and facilities.
                     </p>
@@ -283,45 +175,23 @@ export default function ContactPage() {
                   <CardTitle>Quick Actions</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <Button asChild className="w-full bg-amber-600 hover:bg-amber-700">
-                    <a href="/appointment">
-                      <Calendar className="h-4 w-4 mr-2" />
-                      Schedule Free Consultation
-                    </a>
-                  </Button>
+                  
                   <Button asChild variant="outline" className="w-full">
-                    <a href="tel:+15551234567">
+                    <a href="tel:+91 9915525266">
                       <Phone className="h-4 w-4 mr-2" />
-                      Call Now: (555) 123-4567
+                      Call Now: +91 9915525266
                     </a>
                   </Button>
                   <Button asChild variant="outline" className="w-full">
                     <a href="mailto:john@smithlaw.com">
                       <Mail className="h-4 w-4 mr-2" />
-                      Email: john@smithlaw.com
+                      Email: munishmittaladv@gmail.com
                     </a>
                   </Button>
                 </CardContent>
               </Card>
 
-              {/* Emergency Contact */}
-              <Card className="border-red-200 bg-red-50">
-                <CardHeader>
-                  <CardTitle className="text-red-800">Emergency Legal Assistance</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-red-700 mb-4">
-                    If you have an urgent legal matter that requires immediate attention, please call our 24/7 emergency
-                    line.
-                  </p>
-                  <Button asChild className="w-full bg-red-600 hover:bg-red-700">
-                    <a href="tel:+15551234567">
-                      <Phone className="h-4 w-4 mr-2" />
-                      Emergency Line: (555) 123-4567
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
+              
             </div>
           </div>
         </div>

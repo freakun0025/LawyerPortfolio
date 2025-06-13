@@ -12,10 +12,11 @@ export default function SuccessPage() {
           <Card className="text-center">
             <CardContent className="p-12">
               <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-6" />
-              <h1 className="text-3xl font-bold text-gray-900 mb-4">Appointment Request Submitted Successfully!</h1>
+              <h1 className="text-3xl font-bold text-gray-900 mb-4">Application Submitted Successfully!</h1>
               <p className="text-xl text-gray-600 mb-8">
-                Thank you for choosing John Smith Law. We have received your consultation request and will contact you
-                within 24 hours to confirm your appointment.
+                Thank you for applying to John Smith Law's internship program. We have received your application and
+                will review it carefully. If your qualifications match our current needs, we will contact you within 2
+                weeks to schedule an interview.
               </p>
 
               <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-8">
@@ -25,19 +26,19 @@ export default function SuccessPage() {
                     <div className="bg-amber-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5">
                       1
                     </div>
-                    <p className="text-amber-700">Our team will review your request and contact you within 24 hours</p>
+                    <p className="text-amber-700">Our team will review your application and resume within 2 weeks</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="bg-amber-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5">
                       2
                     </div>
-                    <p className="text-amber-700">We'll confirm your appointment date and time</p>
+                    <p className="text-amber-700">Selected candidates will be contacted for an interview</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="bg-amber-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5">
                       3
                     </div>
-                    <p className="text-amber-700">You'll receive a confirmation email with meeting details</p>
+                    <p className="text-amber-700">Final decisions will be made after the interview process</p>
                   </div>
                 </div>
               </div>
@@ -62,7 +63,7 @@ export default function SuccessPage() {
                   <Link href="/">Return to Home</Link>
                 </Button>
                 <Button asChild variant="outline">
-                  <Link href="/services">View Our Services</Link>
+                  <Link href="/media">View Our Media Gallery</Link>
                 </Button>
               </div>
             </CardContent>

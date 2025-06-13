@@ -11,15 +11,15 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About John Smith</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About Munish Mittal</h1>
               <p className="text-xl text-gray-600 mb-6">
-                A dedicated attorney with over 15 years of experience in civil litigation, property law, and contract
+                A dedicated lawyer with over 20 years of experience in civil litigation, property law, marriage and contract
                 disputes. Committed to providing exceptional legal representation and achieving the best outcomes for
                 clients.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-amber-600">15+</div>
+                  <div className="text-2xl font-bold text-amber-600">20+</div>
                   <div className="text-sm text-gray-600">Years Experience</div>
                 </div>
                 <div className="text-center">
@@ -31,7 +31,7 @@ export default function AboutPage() {
             <div className="relative">
               <Image
                 src="/placeholder.svg?height=600&width=500"
-                alt="John Smith in his law office"
+                alt="Munish Mittal in his law office"
                 width={500}
                 height={600}
                 className="rounded-lg shadow-lg"

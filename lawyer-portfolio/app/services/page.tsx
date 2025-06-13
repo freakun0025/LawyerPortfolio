@@ -164,14 +164,12 @@ export default function ServicesPage() {
             Contact us today for a free consultation and let's discuss your legal needs
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-white text-amber-600 hover:bg-gray-100">
-              <Link href="/appointment">Schedule Consultation</Link>
-            </Button>
+            
             <Button
               asChild
               variant="outline"
               size="lg"
-              className="text-white border-white hover:bg-white hover:text-amber-600"
+              className="text-black border-white hover:bg-white hover:text-amber-600"
             >
               <Link href="/contact">Contact Us</Link>
             </Button>
